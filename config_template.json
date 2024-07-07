@@ -1,0 +1,8 @@
+{
+    "apiKey": "",
+    "secret": "",
+    "passwordOKX": "",
+    "withdrawalLink": "https://www.okx.com/ru/balance/withdrawal-add-address/sol/880",
+    "whitelistPage": "https://www.okx.com/ru/balance/withdrawal-address/sol/880",
+    "chain": "Solana"
+}
