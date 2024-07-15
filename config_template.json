@@ -1,8 +1,10 @@
 {
-    "apiKey": "",
-    "secret": "",
-    "passwordOKX": "",
     "withdrawalLink": "https://www.okx.com/ru/balance/withdrawal-add-address/sol/880",
     "whitelistPage": "https://www.okx.com/ru/balance/withdrawal-address/sol/880",
-    "chain": "Solana"
+    "token": "SOL",
+    "chain": "Solana",
+    "minSolAmount": 0.04,
+    "maxSolAmount": 0.06,
+    "dispatchConfigPath": "./dispatch_config.json",
+    "fee": 0.008
 }
