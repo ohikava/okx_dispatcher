@@ -3,8 +3,6 @@
     "whitelistPage": "https://www.okx.com/ru/balance/withdrawal-address/sol/880",
     "token": "SOL",
     "chain": "Solana",
-    "minSolAmount": 0.04,
-    "maxSolAmount": 0.06,
     "dispatchConfigPath": "./dispatch_config.json",
     "fee": 0.008
 }

@@ -23,20 +23,13 @@ class Dispatcher:
         self._fee = float(CONFIG['fee'])
         self._token = CONFIG['token']
         self._token_chain = f"{CONFIG['token']}-{CONFIG['chain']}"
-
-    def generate_config(self):
-        self.dispatch_config = {}
-        for wallet in self.WALLETS:
-            solAmount = round(random.uniform(self._min_sol_amount, self._max_sol_amount), 2)
-            self.dispatch_config[wallet] = solAmount
-        
-        with open(self._dispatch_config_path, "w") as file:
-            json.dump(self.dispatch_config, file)
         
 
 
     def dispatch(self):
-        self.generate_config() 
+        with open(self._dispatch_config_path, "r") as file:
+            self.dispatch_config = json.load(file)
+            
         self._dispatch()
 
     def withdraw(self, amount: float, address: str):
